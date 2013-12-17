@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EE18C0589534034AD1D70BF /* libPods-AFQiniuClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC46C27EB8C347D382A153EC /* libPods-AFQiniuClient.a */; };
 		942B2C181851D7270090F7C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B2C171851D7270090F7C9 /* Foundation.framework */; };
 		942B2C1A1851D7270090F7C9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B2C191851D7270090F7C9 /* CoreGraphics.framework */; };
 		942B2C1C1851D7270090F7C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B2C1B1851D7270090F7C9 /* UIKit.framework */; };
@@ -21,6 +22,20 @@
 		942B2C391851D7270090F7C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B2C1B1851D7270090F7C9 /* UIKit.framework */; };
 		942B2C411851D7270090F7C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 942B2C3F1851D7270090F7C9 /* InfoPlist.strings */; };
 		942B2C431851D7270090F7C9 /* AFQiniuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 942B2C421851D7270090F7C9 /* AFQiniuTests.m */; };
+		942B2C511851D7440090F7C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B2C171851D7270090F7C9 /* Foundation.framework */; };
+		942B2C561851D7440090F7C9 /* AFQiniuClient.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 942B2C551851D7440090F7C9 /* AFQiniuClient.h */; };
+		942B2C581851D7440090F7C9 /* AFQiniuClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 942B2C571851D7440090F7C9 /* AFQiniuClient.m */; };
+		942B2C5E1851D7440090F7C9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B2C361851D7270090F7C9 /* XCTest.framework */; };
+		942B2C5F1851D7440090F7C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B2C171851D7270090F7C9 /* Foundation.framework */; };
+		942B2C601851D7440090F7C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B2C1B1851D7270090F7C9 /* UIKit.framework */; };
+		942B2C631851D7440090F7C9 /* libAFQiniuClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B2C501851D7440090F7C9 /* libAFQiniuClient.a */; };
+		942B2C691851D7440090F7C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 942B2C671851D7440090F7C9 /* InfoPlist.strings */; };
+		942B2C6B1851D7440090F7C9 /* AFQiniuClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 942B2C6A1851D7440090F7C9 /* AFQiniuClientTests.m */; };
+		94544FB0185FF4020007C1A5 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 94544FAF185FF4020007C1A5 /* 1.jpg */; };
+		94F5BE6F185EFF0B0053E2A0 /* QiniuPutPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F5BE6E185EFF0B0053E2A0 /* QiniuPutPolicy.m */; };
+		94F5BE72185EFF830053E2A0 /* QiniuPutExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F5BE71185EFF830053E2A0 /* QiniuPutExtra.m */; };
+		94F5BE77185F07850053E2A0 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F5BE75185F07850053E2A0 /* GTMBase64.m */; };
+		94F5BE7C185F0F6C0053E2A0 /* libAFQiniuClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B2C501851D7440090F7C9 /* libAFQiniuClient.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +46,37 @@
 			remoteGlobalIDString = 942B2C131851D7270090F7C9;
 			remoteInfo = AFQiniu;
 		};
+		942B2C611851D7440090F7C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 942B2C0C1851D7270090F7C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 942B2C4F1851D7440090F7C9;
+			remoteInfo = AFQiniuClient;
+		};
+		94F5BE7A185F0E810053E2A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 942B2C0C1851D7270090F7C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 942B2C4F1851D7440090F7C9;
+			remoteInfo = AFQiniuClient;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		942B2C4E1851D7440090F7C9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				942B2C561851D7440090F7C9 /* AFQiniuClient.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		8500FFA457FB4D739F78BC45 /* Pods-AFQiniuClient.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFQiniuClient.xcconfig"; path = "Pods/Pods-AFQiniuClient.xcconfig"; sourceTree = "<group>"; };
 		942B2C141851D7270090F7C9 /* AFQiniu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFQiniu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		942B2C171851D7270090F7C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		942B2C191851D7270090F7C9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +96,26 @@
 		942B2C3E1851D7270090F7C9 /* AFQiniuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AFQiniuTests-Info.plist"; sourceTree = "<group>"; };
 		942B2C401851D7270090F7C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		942B2C421851D7270090F7C9 /* AFQiniuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFQiniuTests.m; sourceTree = "<group>"; };
+		942B2C501851D7440090F7C9 /* libAFQiniuClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAFQiniuClient.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		942B2C541851D7440090F7C9 /* AFQiniuClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFQiniuClient-Prefix.pch"; sourceTree = "<group>"; };
+		942B2C551851D7440090F7C9 /* AFQiniuClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFQiniuClient.h; sourceTree = "<group>"; };
+		942B2C571851D7440090F7C9 /* AFQiniuClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFQiniuClient.m; sourceTree = "<group>"; };
+		942B2C5D1851D7440090F7C9 /* AFQiniuClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AFQiniuClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		942B2C661851D7440090F7C9 /* AFQiniuClientTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AFQiniuClientTests-Info.plist"; sourceTree = "<group>"; };
+		942B2C681851D7440090F7C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		942B2C6A1851D7440090F7C9 /* AFQiniuClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFQiniuClientTests.m; sourceTree = "<group>"; };
+		94544FAF185FF4020007C1A5 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		94F5BE6D185EFF0B0053E2A0 /* QiniuPutPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiniuPutPolicy.h; sourceTree = "<group>"; };
+		94F5BE6E185EFF0B0053E2A0 /* QiniuPutPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiniuPutPolicy.m; sourceTree = "<group>"; };
+		94F5BE70185EFF7B0053E2A0 /* QiniuPutExtra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QiniuPutExtra.h; sourceTree = "<group>"; };
+		94F5BE71185EFF830053E2A0 /* QiniuPutExtra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiniuPutExtra.m; sourceTree = "<group>"; };
+		94F5BE74185F07850053E2A0 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		94F5BE75185F07850053E2A0 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		94F5BE76185F07850053E2A0 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		94F5BE7D185F10530053E2A0 /* QiniuConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiniuConfig.h; sourceTree = "<group>"; };
+		A576AF57771B4D37A059DE3F /* libPods-AFQiniu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AFQiniu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE5E484C9EAA4C4ABC71BC35 /* Pods-AFQiniu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFQiniu.xcconfig"; path = "Pods/Pods-AFQiniu.xcconfig"; sourceTree = "<group>"; };
+		EC46C27EB8C347D382A153EC /* libPods-AFQiniuClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AFQiniuClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94F5BE7C185F0F6C0053E2A0 /* libAFQiniuClient.a in Frameworks */,
 				942B2C1A1851D7270090F7C9 /* CoreGraphics.framework in Frameworks */,
 				942B2C1C1851D7270090F7C9 /* UIKit.framework in Frameworks */,
 				942B2C181851D7270090F7C9 /* Foundation.framework in Frameworks */,
@@ -76,6 +140,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		942B2C4D1851D7440090F7C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				942B2C511851D7440090F7C9 /* Foundation.framework in Frameworks */,
+				2EE18C0589534034AD1D70BF /* libPods-AFQiniuClient.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		942B2C5A1851D7440090F7C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				942B2C631851D7440090F7C9 /* libAFQiniuClient.a in Frameworks */,
+				942B2C5E1851D7440090F7C9 /* XCTest.framework in Frameworks */,
+				942B2C601851D7440090F7C9 /* UIKit.framework in Frameworks */,
+				942B2C5F1851D7440090F7C9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,8 +168,12 @@
 			children = (
 				942B2C1D1851D7270090F7C9 /* AFQiniu */,
 				942B2C3C1851D7270090F7C9 /* AFQiniuTests */,
+				942B2C521851D7440090F7C9 /* AFQiniuClient */,
+				942B2C641851D7440090F7C9 /* AFQiniuClientTests */,
 				942B2C161851D7270090F7C9 /* Frameworks */,
 				942B2C151851D7270090F7C9 /* Products */,
+				AE5E484C9EAA4C4ABC71BC35 /* Pods-AFQiniu.xcconfig */,
+				8500FFA457FB4D739F78BC45 /* Pods-AFQiniuClient.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +182,8 @@
 			children = (
 				942B2C141851D7270090F7C9 /* AFQiniu.app */,
 				942B2C351851D7270090F7C9 /* AFQiniuTests.xctest */,
+				942B2C501851D7440090F7C9 /* libAFQiniuClient.a */,
+				942B2C5D1851D7440090F7C9 /* AFQiniuClientTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +195,8 @@
 				942B2C191851D7270090F7C9 /* CoreGraphics.framework */,
 				942B2C1B1851D7270090F7C9 /* UIKit.framework */,
 				942B2C361851D7270090F7C9 /* XCTest.framework */,
+				A576AF57771B4D37A059DE3F /* libPods-AFQiniu.a */,
+				EC46C27EB8C347D382A153EC /* libPods-AFQiniuClient.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,11 +204,13 @@
 		942B2C1D1851D7270090F7C9 /* AFQiniu */ = {
 			isa = PBXGroup;
 			children = (
+				94544FAF185FF4020007C1A5 /* 1.jpg */,
 				942B2C261851D7270090F7C9 /* RAppDelegate.h */,
 				942B2C271851D7270090F7C9 /* RAppDelegate.m */,
 				942B2C291851D7270090F7C9 /* Main.storyboard */,
 				942B2C2C1851D7270090F7C9 /* RViewController.h */,
 				942B2C2D1851D7270090F7C9 /* RViewController.m */,
+				94F5BE7D185F10530053E2A0 /* QiniuConfig.h */,
 				942B2C2F1851D7270090F7C9 /* Images.xcassets */,
 				942B2C1E1851D7270090F7C9 /* Supporting Files */,
 			);
@@ -152,6 +246,57 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		942B2C521851D7440090F7C9 /* AFQiniuClient */ = {
+			isa = PBXGroup;
+			children = (
+				94F5BE73185F07850053E2A0 /* GTMBase64 */,
+				94F5BE6D185EFF0B0053E2A0 /* QiniuPutPolicy.h */,
+				94F5BE6E185EFF0B0053E2A0 /* QiniuPutPolicy.m */,
+				942B2C551851D7440090F7C9 /* AFQiniuClient.h */,
+				942B2C571851D7440090F7C9 /* AFQiniuClient.m */,
+				94F5BE70185EFF7B0053E2A0 /* QiniuPutExtra.h */,
+				94F5BE71185EFF830053E2A0 /* QiniuPutExtra.m */,
+				942B2C531851D7440090F7C9 /* Supporting Files */,
+			);
+			path = AFQiniuClient;
+			sourceTree = "<group>";
+		};
+		942B2C531851D7440090F7C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				942B2C541851D7440090F7C9 /* AFQiniuClient-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		942B2C641851D7440090F7C9 /* AFQiniuClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				942B2C6A1851D7440090F7C9 /* AFQiniuClientTests.m */,
+				942B2C651851D7440090F7C9 /* Supporting Files */,
+			);
+			path = AFQiniuClientTests;
+			sourceTree = "<group>";
+		};
+		942B2C651851D7440090F7C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				942B2C661851D7440090F7C9 /* AFQiniuClientTests-Info.plist */,
+				942B2C671851D7440090F7C9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94F5BE73185F07850053E2A0 /* GTMBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				94F5BE74185F07850053E2A0 /* GTMBase64.h */,
+				94F5BE75185F07850053E2A0 /* GTMBase64.m */,
+				94F5BE76185F07850053E2A0 /* GTMDefines.h */,
+			);
+			path = GTMBase64;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,13 +304,16 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 942B2C461851D7270090F7C9 /* Build configuration list for PBXNativeTarget "AFQiniu" */;
 			buildPhases = (
+				2BD77E8C5DC945DDA799BDC6 /* Check Pods Manifest.lock */,
 				942B2C101851D7270090F7C9 /* Sources */,
 				942B2C111851D7270090F7C9 /* Frameworks */,
 				942B2C121851D7270090F7C9 /* Resources */,
+				4A651830BE5E48EE90406D73 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				94F5BE7B185F0E810053E2A0 /* PBXTargetDependency */,
 			);
 			name = AFQiniu;
 			productName = AFQiniu;
@@ -190,6 +338,43 @@
 			productReference = 942B2C351851D7270090F7C9 /* AFQiniuTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		942B2C4F1851D7440090F7C9 /* AFQiniuClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 942B2C6C1851D7440090F7C9 /* Build configuration list for PBXNativeTarget "AFQiniuClient" */;
+			buildPhases = (
+				BC896893A62B48899B928765 /* Check Pods Manifest.lock */,
+				942B2C4C1851D7440090F7C9 /* Sources */,
+				942B2C4D1851D7440090F7C9 /* Frameworks */,
+				942B2C4E1851D7440090F7C9 /* CopyFiles */,
+				6F7008661C01407E89A1E70A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AFQiniuClient;
+			productName = AFQiniuClient;
+			productReference = 942B2C501851D7440090F7C9 /* libAFQiniuClient.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		942B2C5C1851D7440090F7C9 /* AFQiniuClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 942B2C6F1851D7440090F7C9 /* Build configuration list for PBXNativeTarget "AFQiniuClientTests" */;
+			buildPhases = (
+				942B2C591851D7440090F7C9 /* Sources */,
+				942B2C5A1851D7440090F7C9 /* Frameworks */,
+				942B2C5B1851D7440090F7C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				942B2C621851D7440090F7C9 /* PBXTargetDependency */,
+			);
+			name = AFQiniuClientTests;
+			productName = AFQiniuClientTests;
+			productReference = 942B2C5D1851D7440090F7C9 /* AFQiniuClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,6 +386,9 @@
 				ORGANIZATIONNAME = "Ryan Wang";
 				TargetAttributes = {
 					942B2C341851D7270090F7C9 = {
+						TestTargetID = 942B2C131851D7270090F7C9;
+					};
+					942B2C5C1851D7440090F7C9 = {
 						TestTargetID = 942B2C131851D7270090F7C9;
 					};
 				};
@@ -220,6 +408,8 @@
 			targets = (
 				942B2C131851D7270090F7C9 /* AFQiniu */,
 				942B2C341851D7270090F7C9 /* AFQiniuTests */,
+				942B2C4F1851D7440090F7C9 /* AFQiniuClient */,
+				942B2C5C1851D7440090F7C9 /* AFQiniuClientTests */,
 			);
 		};
 /* End PBXProject section */
@@ -230,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				942B2C301851D7270090F7C9 /* Images.xcassets in Resources */,
+				94544FB0185FF4020007C1A5 /* 1.jpg in Resources */,
 				942B2C221851D7270090F7C9 /* InfoPlist.strings in Resources */,
 				942B2C2B1851D7270090F7C9 /* Main.storyboard in Resources */,
 			);
@@ -243,7 +434,78 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		942B2C5B1851D7440090F7C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				942B2C691851D7440090F7C9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BD77E8C5DC945DDA799BDC6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4A651830BE5E48EE90406D73 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-AFQiniu-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F7008661C01407E89A1E70A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-AFQiniuClient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC896893A62B48899B928765 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		942B2C101851D7270090F7C9 /* Sources */ = {
@@ -264,6 +526,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		942B2C4C1851D7440090F7C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94F5BE72185EFF830053E2A0 /* QiniuPutExtra.m in Sources */,
+				94F5BE6F185EFF0B0053E2A0 /* QiniuPutPolicy.m in Sources */,
+				942B2C581851D7440090F7C9 /* AFQiniuClient.m in Sources */,
+				94F5BE77185F07850053E2A0 /* GTMBase64.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		942B2C591851D7440090F7C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				942B2C6B1851D7440090F7C9 /* AFQiniuClientTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -271,6 +552,16 @@
 			isa = PBXTargetDependency;
 			target = 942B2C131851D7270090F7C9 /* AFQiniu */;
 			targetProxy = 942B2C3A1851D7270090F7C9 /* PBXContainerItemProxy */;
+		};
+		942B2C621851D7440090F7C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 942B2C4F1851D7440090F7C9 /* AFQiniuClient */;
+			targetProxy = 942B2C611851D7440090F7C9 /* PBXContainerItemProxy */;
+		};
+		94F5BE7B185F0E810053E2A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 942B2C4F1851D7440090F7C9 /* AFQiniuClient */;
+			targetProxy = 94F5BE7A185F0E810053E2A0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -295,6 +586,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				942B2C401851D7270090F7C9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		942B2C671851D7440090F7C9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				942B2C681851D7440090F7C9 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -376,6 +675,7 @@
 		};
 		942B2C471851D7270090F7C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE5E484C9EAA4C4ABC71BC35 /* Pods-AFQiniu.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -389,6 +689,7 @@
 		};
 		942B2C481851D7270090F7C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE5E484C9EAA4C4ABC71BC35 /* Pods-AFQiniu.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -442,6 +743,80 @@
 			};
 			name = Release;
 		};
+		942B2C6D1851D7440090F7C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8500FFA457FB4D739F78BC45 /* Pods-AFQiniuClient.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/AFQiniuClient.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AFQiniuClient/AFQiniuClient-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		942B2C6E1851D7440090F7C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8500FFA457FB4D739F78BC45 /* Pods-AFQiniuClient.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/AFQiniuClient.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AFQiniuClient/AFQiniuClient-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		942B2C701851D7440090F7C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AFQiniu.app/AFQiniu";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AFQiniuClient/AFQiniuClient-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AFQiniuClientTests/AFQiniuClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		942B2C711851D7440090F7C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AFQiniu.app/AFQiniu";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AFQiniuClient/AFQiniuClient-Prefix.pch";
+				INFOPLIST_FILE = "AFQiniuClientTests/AFQiniuClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -461,6 +836,7 @@
 				942B2C481851D7270090F7C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		942B2C491851D7270090F7C9 /* Build configuration list for PBXNativeTarget "AFQiniuTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +845,25 @@
 				942B2C4B1851D7270090F7C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		942B2C6C1851D7440090F7C9 /* Build configuration list for PBXNativeTarget "AFQiniuClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				942B2C6D1851D7440090F7C9 /* Debug */,
+				942B2C6E1851D7440090F7C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		942B2C6F1851D7440090F7C9 /* Build configuration list for PBXNativeTarget "AFQiniuClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				942B2C701851D7440090F7C9 /* Debug */,
+				942B2C711851D7440090F7C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

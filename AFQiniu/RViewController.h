@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "QiniuConfig.h"
 
 @interface RViewController : UIViewController
+
+@property (nonatomic, strong) IBOutlet UIButton *uploadButton;
+@property (nonatomic, strong) IBOutlet UIButton *downloadButton;
+@property (nonatomic, strong) IBOutlet UILabel *hashLabel;
+@property (nonatomic, strong) IBOutlet UILabel *progressLabel;
 
 @end

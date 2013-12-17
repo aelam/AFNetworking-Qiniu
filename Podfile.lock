@@ -1,0 +1,17 @@
+PODS:
+  - AFNetworking (1.3.3)
+  - JSONKit (1.6)
+
+DEPENDENCIES:
+  - AFNetworking (~> 1.3.0)
+  - JSONKit (from `https://raw.github.com/jstart/Specs/8e68f73dae8a378bc16e9b3891b7df6f5f4357d9/JSONKit/1.6/JSONKit.podspec`)
+
+EXTERNAL SOURCES:
+  JSONKit:
+    :podspec: https://raw.github.com/jstart/Specs/8e68f73dae8a378bc16e9b3891b7df6f5f4357d9/JSONKit/1.6/JSONKit.podspec
+
+SPEC CHECKSUMS:
+  AFNetworking: 61fdd49e2ffe6380378df37b3b6e70630bb9dd66
+  JSONKit: fcffce5ba89a9e9a7fe38b7f94ce974cd698bedf
+
+COCOAPODS: 0.28.0
