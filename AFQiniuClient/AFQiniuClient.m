@@ -9,6 +9,16 @@
 #import "AFQiniuClient.h"
 #import "QiniuPutPolicy.h"
 
+#ifdef HAVE_MAGIC_KIT
+#import <MagicKit/MagicKit.h>
+#endif
+
+#if TARGET_OS_IPHONE
+    #import <MobileCoreServices/MobileCoreServices.h>
+#else
+    #import <SystemConfiguration/SystemConfiguration.h>
+#endif
+
 #define kQiniuUpHost @"http://up.qiniu.com"
 
 @interface AFQiniuClient ()
@@ -38,7 +48,7 @@
 }
 
 
-- (AFHTTPRequestOperation *)uploadFile:(NSString *)filePath
+- (AFHTTPRequestOperation *)uploadFile:(id)file
                 fileName:(NSString *)name
               extra:(QiniuPutExtra *)extra
 {
@@ -51,14 +61,28 @@
         if (extra.checkCrc == 1) {
             [parameters setObject:[NSString stringWithFormat:@"%u", (unsigned int)extra.crc32] forKey:@"crc32"];
         }
-        
         [parameters addEntriesFromDictionary:extra.params];
+    }
+    
+    if (mimeType == nil) {
+        mimeType = [[self class] mimeTypeForFile:file];
     }
 
     NSMutableURLRequest *request = [self multipartFormRequestWithMethod:@"POST" path:@"/" parameters:parameters constructingBodyWithBlock: ^(id <AFMultipartFormData>formData) {
         NSError *error = nil;
-        // the name must be `file` 
-        [formData appendPartWithFileURL:[NSURL fileURLWithPath:filePath] name:@"file" fileName:name mimeType:@"image/*" error:&error];
+        // the name must be `file`
+        if ([file isKindOfClass:[NSData class]]) {
+            [formData appendPartWithFileData:file name:@"file" fileName:name mimeType:mimeType];
+        } else if ([file isKindOfClass:[NSString class]]) {
+            NSURL *fileURL = [NSURL fileURLWithPath:file];
+            if (fileURL) {
+                [formData appendPartWithFileURL:fileURL name:@"file" fileName:name mimeType:mimeType error:&error];
+            } else {
+                [[NSException exceptionWithName:@"NotImage" reason:@"Not a file path" userInfo:nil] raise];
+            }
+        } else {
+            [[NSException exceptionWithName:@"NotSupportType" reason:@"Not a supported type of file" userInfo:nil] raise];
+        }
         if (error) {
             NSLog(@"%@",error);
         }
@@ -80,5 +104,28 @@
     
 }
 
++ (NSString *)mimeTypeForFile:(id)file {
+#ifdef HAVE_MAGIC_KIT
+    GEMagicResult *result;
+    
+    if ([file isKindOfClass:[NSData class]]) {
+        result = [GEMagicKit magicForData:file];
+        return result.mimeType;
+    } else if ([file isKindOfClass:[NSString class]]) {
+        
+        NSURL *fileURL = [NSURL fileURLWithPath:file];
+        if (fileURL) {
+            result = [GEMagicKit magicForFileAtURL:fileURL];
+            return result.mimeType;
+        } else {
+            return @"application/octet-stream";
+        }
+    } else {
+        return @"application/octet-stream";
+    }
+#else
+    return @"application/octet-stream";
+#endif
+}
 
 @end

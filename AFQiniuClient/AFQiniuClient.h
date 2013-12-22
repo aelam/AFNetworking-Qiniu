@@ -10,17 +10,28 @@
 #import <AFNetworking/AFNetworking.h>
 #import "QiniuPutExtra.h"
 
-//#define AK @"yGZ5pDMaYFfQrHjzcbkOkmmpeJydOOfLPf7UanoI"
-//#define SK @"zm76rQUtvpbq5Fu14MYOARPvnx5nQlfaHrFPjwkE"
-//#define BASE_URL @"http://cpod.qiniu.com"
-
 @interface AFQiniuClient : AFHTTPClient
 
+/**
+ * @token uploadToken
+ * You can get from your server
+ */
 + (instancetype)clientWithToken:(NSString *)token;
 
-+ (instancetype)clientWithAppKey:(NSString *)token secret:(NSString *)secret scope:(NSString *)bucket;
+/**
+ * @appKey appKey
+ * @secret appSecret
+ * @scope  your bucket name case-sensitive
+ * calculate uploadToken on client-side
+ */
++ (instancetype)clientWithAppKey:(NSString *)appKey secret:(NSString *)secret scope:(NSString *)bucket;
 
-- (AFHTTPRequestOperation *)uploadFile:(NSString *)filePath
+/**
+ * @file supports NSDate and NSString(filePath)
+ * @extra specific mimeType or magic args
+ * default mimeType is nil, qiniu will detect it
+ */
+- (AFHTTPRequestOperation *)uploadFile:(id)file
                               fileName:(NSString *)name
                                  extra:(QiniuPutExtra *)extra;
 

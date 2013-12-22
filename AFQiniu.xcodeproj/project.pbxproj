@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2EE18C0589534034AD1D70BF /* libPods-AFQiniuClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC46C27EB8C347D382A153EC /* libPods-AFQiniuClient.a */; };
+		3DBC0EAA049742718082462A /* libPods-AFQiniu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A576AF57771B4D37A059DE3F /* libPods-AFQiniu.a */; };
 		942B2C181851D7270090F7C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B2C171851D7270090F7C9 /* Foundation.framework */; };
 		942B2C1A1851D7270090F7C9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B2C191851D7270090F7C9 /* CoreGraphics.framework */; };
 		942B2C1C1851D7270090F7C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B2C1B1851D7270090F7C9 /* UIKit.framework */; };
@@ -31,6 +32,7 @@
 		942B2C631851D7440090F7C9 /* libAFQiniuClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B2C501851D7440090F7C9 /* libAFQiniuClient.a */; };
 		942B2C691851D7440090F7C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 942B2C671851D7440090F7C9 /* InfoPlist.strings */; };
 		942B2C6B1851D7440090F7C9 /* AFQiniuClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 942B2C6A1851D7440090F7C9 /* AFQiniuClientTests.m */; };
+		94394E551867309100252D85 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 94394E541867309100252D85 /* libz.dylib */; };
 		94544FB0185FF4020007C1A5 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 94544FAF185FF4020007C1A5 /* 1.jpg */; };
 		94F5BE6F185EFF0B0053E2A0 /* QiniuPutPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F5BE6E185EFF0B0053E2A0 /* QiniuPutPolicy.m */; };
 		94F5BE72185EFF830053E2A0 /* QiniuPutExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F5BE71185EFF830053E2A0 /* QiniuPutExtra.m */; };
@@ -104,6 +106,7 @@
 		942B2C661851D7440090F7C9 /* AFQiniuClientTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AFQiniuClientTests-Info.plist"; sourceTree = "<group>"; };
 		942B2C681851D7440090F7C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		942B2C6A1851D7440090F7C9 /* AFQiniuClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFQiniuClientTests.m; sourceTree = "<group>"; };
+		94394E541867309100252D85 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		94544FAF185FF4020007C1A5 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		94F5BE6D185EFF0B0053E2A0 /* QiniuPutPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiniuPutPolicy.h; sourceTree = "<group>"; };
 		94F5BE6E185EFF0B0053E2A0 /* QiniuPutPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiniuPutPolicy.m; sourceTree = "<group>"; };
@@ -123,10 +126,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94394E551867309100252D85 /* libz.dylib in Frameworks */,
 				94F5BE7C185F0F6C0053E2A0 /* libAFQiniuClient.a in Frameworks */,
 				942B2C1A1851D7270090F7C9 /* CoreGraphics.framework in Frameworks */,
 				942B2C1C1851D7270090F7C9 /* UIKit.framework in Frameworks */,
 				942B2C181851D7270090F7C9 /* Foundation.framework in Frameworks */,
+				3DBC0EAA049742718082462A /* libPods-AFQiniu.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +196,7 @@
 		942B2C161851D7270090F7C9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				94394E541867309100252D85 /* libz.dylib */,
 				942B2C171851D7270090F7C9 /* Foundation.framework */,
 				942B2C191851D7270090F7C9 /* CoreGraphics.framework */,
 				942B2C1B1851D7270090F7C9 /* UIKit.framework */,

@@ -6,9 +6,13 @@ Pod::Spec.new do |s|
   s.license      = 'Apache License, Version 2.0'
   s.author       = "Ryan Wang => ryanwang@me.com"
   s.source       = { :git => 'https://github.com/aelam/AFNetworking-Qiniu.git', :tag => '0.0.1' }
-  s.platform     = :ios, 5.0
+
+  s.ios.deployment_target = '5.0'
+  s.osx.deployment_target = '10.7'
+
   s.source_files = 'AFQiniuClient/**/*.{h,m}'
   s.requires_arc = true
-  s.dependency 'AFNetworking', '~>1.3'
+  s.dependency 'AFNetworking'
+  #s.dependency 'MagicKit', :podspec => 'https://raw.github.com/aelam/Specs/magic/MagicKit/0.0.1/MagicKit.podspec'
 
 end
