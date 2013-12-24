@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "AFQiniuClient"
   s.version      = "0.0.1"
-  s.summary      = "AFNetworking for Qiniu"
+  s.summary      = "AFNetworking Extension for Qiniu(七牛)"
   s.homepage     = "https://github.com/aelam/AFNetworking-Qiniu"
   s.license      = 'Apache License, Version 2.0'
   s.author       = "Ryan Wang => ryanwang@me.com"
