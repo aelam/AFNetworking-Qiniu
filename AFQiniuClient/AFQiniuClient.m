@@ -21,6 +21,11 @@
 
 #define kQiniuUpHost @"http://up.qiniu.com"
 
+
+#ifndef HAVE_MAGIC_KIT
+#define HAVE_MAGIC_KIT
+#endif
+
 @interface AFQiniuClient ()
 
 @property (nonatomic, strong) NSString *token;

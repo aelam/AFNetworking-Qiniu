@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'AFQiniuClient/**/*.{h,m}'
   s.requires_arc = true
-  s.dependency 'AFNetworking'
-  #s.dependency 'MagicKit', :podspec => 'https://raw.github.com/aelam/Specs/magic/MagicKit/0.0.1/MagicKit.podspec'
-
+  s.dependency 'AFNetworking', '~>1.3'
+  s.dependency 'MagicKit', '~>0.0.1'
+  
 end
