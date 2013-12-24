@@ -7,8 +7,9 @@
 //
 
 #import "RViewController.h"
-#import "AFQiniuClient.h"
-#import <JSONKit/JSONKit.h>
+//#import "AFQiniuClient.h"
+#import <AFQiniuClient/AFQiniuClient.h>
+//#import <JSONKit/JSONKit.h>
 
 @interface RViewController ()
 @property (nonatomic, strong)AFQiniuClient *client;
@@ -37,11 +38,11 @@
     }];
     
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSDictionary *dic = [responseObject objectFromJSONData];
-        self.hash = dic[@"hash"];
-        self.key = dic[@"key"];
+//        NSDictionary *dic = [responseObject objectFromJSONData];
+//        self.hash = dic[@"hash"];
+//        self.key = dic[@"key"];
         
-        self.hashLabel.text = self.hash;
+//        self.hashLabel.text = self.hash;
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
     }];

@@ -1,877 +1,1949 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		2EE18C0589534034AD1D70BF /* libPods-AFQiniuClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC46C27EB8C347D382A153EC /* libPods-AFQiniuClient.a */; };
-		3DBC0EAA049742718082462A /* libPods-AFQiniu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A576AF57771B4D37A059DE3F /* libPods-AFQiniu.a */; };
-		942B2C181851D7270090F7C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B2C171851D7270090F7C9 /* Foundation.framework */; };
-		942B2C1A1851D7270090F7C9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B2C191851D7270090F7C9 /* CoreGraphics.framework */; };
-		942B2C1C1851D7270090F7C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B2C1B1851D7270090F7C9 /* UIKit.framework */; };
-		942B2C221851D7270090F7C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 942B2C201851D7270090F7C9 /* InfoPlist.strings */; };
-		942B2C241851D7270090F7C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 942B2C231851D7270090F7C9 /* main.m */; };
-		942B2C281851D7270090F7C9 /* RAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 942B2C271851D7270090F7C9 /* RAppDelegate.m */; };
-		942B2C2B1851D7270090F7C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942B2C291851D7270090F7C9 /* Main.storyboard */; };
-		942B2C2E1851D7270090F7C9 /* RViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 942B2C2D1851D7270090F7C9 /* RViewController.m */; };
-		942B2C301851D7270090F7C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 942B2C2F1851D7270090F7C9 /* Images.xcassets */; };
-		942B2C371851D7270090F7C9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B2C361851D7270090F7C9 /* XCTest.framework */; };
-		942B2C381851D7270090F7C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B2C171851D7270090F7C9 /* Foundation.framework */; };
-		942B2C391851D7270090F7C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B2C1B1851D7270090F7C9 /* UIKit.framework */; };
-		942B2C411851D7270090F7C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 942B2C3F1851D7270090F7C9 /* InfoPlist.strings */; };
-		942B2C431851D7270090F7C9 /* AFQiniuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 942B2C421851D7270090F7C9 /* AFQiniuTests.m */; };
-		942B2C511851D7440090F7C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B2C171851D7270090F7C9 /* Foundation.framework */; };
-		942B2C561851D7440090F7C9 /* AFQiniuClient.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 942B2C551851D7440090F7C9 /* AFQiniuClient.h */; };
-		942B2C581851D7440090F7C9 /* AFQiniuClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 942B2C571851D7440090F7C9 /* AFQiniuClient.m */; };
-		942B2C5E1851D7440090F7C9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B2C361851D7270090F7C9 /* XCTest.framework */; };
-		942B2C5F1851D7440090F7C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B2C171851D7270090F7C9 /* Foundation.framework */; };
-		942B2C601851D7440090F7C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B2C1B1851D7270090F7C9 /* UIKit.framework */; };
-		942B2C631851D7440090F7C9 /* libAFQiniuClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B2C501851D7440090F7C9 /* libAFQiniuClient.a */; };
-		942B2C691851D7440090F7C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 942B2C671851D7440090F7C9 /* InfoPlist.strings */; };
-		942B2C6B1851D7440090F7C9 /* AFQiniuClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 942B2C6A1851D7440090F7C9 /* AFQiniuClientTests.m */; };
-		94394E551867309100252D85 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 94394E541867309100252D85 /* libz.dylib */; };
-		94544FB0185FF4020007C1A5 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 94544FAF185FF4020007C1A5 /* 1.jpg */; };
-		94F5BE6F185EFF0B0053E2A0 /* QiniuPutPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F5BE6E185EFF0B0053E2A0 /* QiniuPutPolicy.m */; };
-		94F5BE72185EFF830053E2A0 /* QiniuPutExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F5BE71185EFF830053E2A0 /* QiniuPutExtra.m */; };
-		94F5BE77185F07850053E2A0 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F5BE75185F07850053E2A0 /* GTMBase64.m */; };
-		94F5BE7C185F0F6C0053E2A0 /* libAFQiniuClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B2C501851D7440090F7C9 /* libAFQiniuClient.a */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		942B2C3A1851D7270090F7C9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 942B2C0C1851D7270090F7C9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 942B2C131851D7270090F7C9;
-			remoteInfo = AFQiniu;
-		};
-		942B2C611851D7440090F7C9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 942B2C0C1851D7270090F7C9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 942B2C4F1851D7440090F7C9;
-			remoteInfo = AFQiniuClient;
-		};
-		94F5BE7A185F0E810053E2A0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 942B2C0C1851D7270090F7C9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 942B2C4F1851D7440090F7C9;
-			remoteInfo = AFQiniuClient;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		942B2C4E1851D7440090F7C9 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-				942B2C561851D7440090F7C9 /* AFQiniuClient.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
-/* Begin PBXFileReference section */
-		8500FFA457FB4D739F78BC45 /* Pods-AFQiniuClient.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFQiniuClient.xcconfig"; path = "Pods/Pods-AFQiniuClient.xcconfig"; sourceTree = "<group>"; };
-		942B2C141851D7270090F7C9 /* AFQiniu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFQiniu.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		942B2C171851D7270090F7C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		942B2C191851D7270090F7C9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		942B2C1B1851D7270090F7C9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		942B2C1F1851D7270090F7C9 /* AFQiniu-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AFQiniu-Info.plist"; sourceTree = "<group>"; };
-		942B2C211851D7270090F7C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		942B2C231851D7270090F7C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		942B2C251851D7270090F7C9 /* AFQiniu-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFQiniu-Prefix.pch"; sourceTree = "<group>"; };
-		942B2C261851D7270090F7C9 /* RAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAppDelegate.h; sourceTree = "<group>"; };
-		942B2C271851D7270090F7C9 /* RAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAppDelegate.m; sourceTree = "<group>"; };
-		942B2C2A1851D7270090F7C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		942B2C2C1851D7270090F7C9 /* RViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RViewController.h; sourceTree = "<group>"; };
-		942B2C2D1851D7270090F7C9 /* RViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RViewController.m; sourceTree = "<group>"; };
-		942B2C2F1851D7270090F7C9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		942B2C351851D7270090F7C9 /* AFQiniuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AFQiniuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		942B2C361851D7270090F7C9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		942B2C3E1851D7270090F7C9 /* AFQiniuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AFQiniuTests-Info.plist"; sourceTree = "<group>"; };
-		942B2C401851D7270090F7C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		942B2C421851D7270090F7C9 /* AFQiniuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFQiniuTests.m; sourceTree = "<group>"; };
-		942B2C501851D7440090F7C9 /* libAFQiniuClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAFQiniuClient.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		942B2C541851D7440090F7C9 /* AFQiniuClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFQiniuClient-Prefix.pch"; sourceTree = "<group>"; };
-		942B2C551851D7440090F7C9 /* AFQiniuClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFQiniuClient.h; sourceTree = "<group>"; };
-		942B2C571851D7440090F7C9 /* AFQiniuClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFQiniuClient.m; sourceTree = "<group>"; };
-		942B2C5D1851D7440090F7C9 /* AFQiniuClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AFQiniuClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		942B2C661851D7440090F7C9 /* AFQiniuClientTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AFQiniuClientTests-Info.plist"; sourceTree = "<group>"; };
-		942B2C681851D7440090F7C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		942B2C6A1851D7440090F7C9 /* AFQiniuClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFQiniuClientTests.m; sourceTree = "<group>"; };
-		94394E541867309100252D85 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		94544FAF185FF4020007C1A5 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
-		94F5BE6D185EFF0B0053E2A0 /* QiniuPutPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiniuPutPolicy.h; sourceTree = "<group>"; };
-		94F5BE6E185EFF0B0053E2A0 /* QiniuPutPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiniuPutPolicy.m; sourceTree = "<group>"; };
-		94F5BE70185EFF7B0053E2A0 /* QiniuPutExtra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QiniuPutExtra.h; sourceTree = "<group>"; };
-		94F5BE71185EFF830053E2A0 /* QiniuPutExtra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiniuPutExtra.m; sourceTree = "<group>"; };
-		94F5BE74185F07850053E2A0 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
-		94F5BE75185F07850053E2A0 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
-		94F5BE76185F07850053E2A0 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
-		94F5BE7D185F10530053E2A0 /* QiniuConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiniuConfig.h; sourceTree = "<group>"; };
-		A576AF57771B4D37A059DE3F /* libPods-AFQiniu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AFQiniu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE5E484C9EAA4C4ABC71BC35 /* Pods-AFQiniu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFQiniu.xcconfig"; path = "Pods/Pods-AFQiniu.xcconfig"; sourceTree = "<group>"; };
-		EC46C27EB8C347D382A153EC /* libPods-AFQiniuClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AFQiniuClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		942B2C111851D7270090F7C9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				94394E551867309100252D85 /* libz.dylib in Frameworks */,
-				94F5BE7C185F0F6C0053E2A0 /* libAFQiniuClient.a in Frameworks */,
-				942B2C1A1851D7270090F7C9 /* CoreGraphics.framework in Frameworks */,
-				942B2C1C1851D7270090F7C9 /* UIKit.framework in Frameworks */,
-				942B2C181851D7270090F7C9 /* Foundation.framework in Frameworks */,
-				3DBC0EAA049742718082462A /* libPods-AFQiniu.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		942B2C321851D7270090F7C9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				942B2C371851D7270090F7C9 /* XCTest.framework in Frameworks */,
-				942B2C391851D7270090F7C9 /* UIKit.framework in Frameworks */,
-				942B2C381851D7270090F7C9 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		942B2C4D1851D7440090F7C9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				942B2C511851D7440090F7C9 /* Foundation.framework in Frameworks */,
-				2EE18C0589534034AD1D70BF /* libPods-AFQiniuClient.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		942B2C5A1851D7440090F7C9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				942B2C631851D7440090F7C9 /* libAFQiniuClient.a in Frameworks */,
-				942B2C5E1851D7440090F7C9 /* XCTest.framework in Frameworks */,
-				942B2C601851D7440090F7C9 /* UIKit.framework in Frameworks */,
-				942B2C5F1851D7440090F7C9 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		942B2C0B1851D7270090F7C9 = {
-			isa = PBXGroup;
-			children = (
-				942B2C1D1851D7270090F7C9 /* AFQiniu */,
-				942B2C3C1851D7270090F7C9 /* AFQiniuTests */,
-				942B2C521851D7440090F7C9 /* AFQiniuClient */,
-				942B2C641851D7440090F7C9 /* AFQiniuClientTests */,
-				942B2C161851D7270090F7C9 /* Frameworks */,
-				942B2C151851D7270090F7C9 /* Products */,
-				AE5E484C9EAA4C4ABC71BC35 /* Pods-AFQiniu.xcconfig */,
-				8500FFA457FB4D739F78BC45 /* Pods-AFQiniuClient.xcconfig */,
-			);
-			sourceTree = "<group>";
-		};
-		942B2C151851D7270090F7C9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				942B2C141851D7270090F7C9 /* AFQiniu.app */,
-				942B2C351851D7270090F7C9 /* AFQiniuTests.xctest */,
-				942B2C501851D7440090F7C9 /* libAFQiniuClient.a */,
-				942B2C5D1851D7440090F7C9 /* AFQiniuClientTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		942B2C161851D7270090F7C9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				94394E541867309100252D85 /* libz.dylib */,
-				942B2C171851D7270090F7C9 /* Foundation.framework */,
-				942B2C191851D7270090F7C9 /* CoreGraphics.framework */,
-				942B2C1B1851D7270090F7C9 /* UIKit.framework */,
-				942B2C361851D7270090F7C9 /* XCTest.framework */,
-				A576AF57771B4D37A059DE3F /* libPods-AFQiniu.a */,
-				EC46C27EB8C347D382A153EC /* libPods-AFQiniuClient.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		942B2C1D1851D7270090F7C9 /* AFQiniu */ = {
-			isa = PBXGroup;
-			children = (
-				94544FAF185FF4020007C1A5 /* 1.jpg */,
-				942B2C261851D7270090F7C9 /* RAppDelegate.h */,
-				942B2C271851D7270090F7C9 /* RAppDelegate.m */,
-				942B2C291851D7270090F7C9 /* Main.storyboard */,
-				942B2C2C1851D7270090F7C9 /* RViewController.h */,
-				942B2C2D1851D7270090F7C9 /* RViewController.m */,
-				94F5BE7D185F10530053E2A0 /* QiniuConfig.h */,
-				942B2C2F1851D7270090F7C9 /* Images.xcassets */,
-				942B2C1E1851D7270090F7C9 /* Supporting Files */,
-			);
-			path = AFQiniu;
-			sourceTree = "<group>";
-		};
-		942B2C1E1851D7270090F7C9 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				942B2C1F1851D7270090F7C9 /* AFQiniu-Info.plist */,
-				942B2C201851D7270090F7C9 /* InfoPlist.strings */,
-				942B2C231851D7270090F7C9 /* main.m */,
-				942B2C251851D7270090F7C9 /* AFQiniu-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		942B2C3C1851D7270090F7C9 /* AFQiniuTests */ = {
-			isa = PBXGroup;
-			children = (
-				942B2C421851D7270090F7C9 /* AFQiniuTests.m */,
-				942B2C3D1851D7270090F7C9 /* Supporting Files */,
-			);
-			path = AFQiniuTests;
-			sourceTree = "<group>";
-		};
-		942B2C3D1851D7270090F7C9 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				942B2C3E1851D7270090F7C9 /* AFQiniuTests-Info.plist */,
-				942B2C3F1851D7270090F7C9 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		942B2C521851D7440090F7C9 /* AFQiniuClient */ = {
-			isa = PBXGroup;
-			children = (
-				94F5BE73185F07850053E2A0 /* GTMBase64 */,
-				94F5BE6D185EFF0B0053E2A0 /* QiniuPutPolicy.h */,
-				94F5BE6E185EFF0B0053E2A0 /* QiniuPutPolicy.m */,
-				942B2C551851D7440090F7C9 /* AFQiniuClient.h */,
-				942B2C571851D7440090F7C9 /* AFQiniuClient.m */,
-				94F5BE70185EFF7B0053E2A0 /* QiniuPutExtra.h */,
-				94F5BE71185EFF830053E2A0 /* QiniuPutExtra.m */,
-				942B2C531851D7440090F7C9 /* Supporting Files */,
-			);
-			path = AFQiniuClient;
-			sourceTree = "<group>";
-		};
-		942B2C531851D7440090F7C9 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				942B2C541851D7440090F7C9 /* AFQiniuClient-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		942B2C641851D7440090F7C9 /* AFQiniuClientTests */ = {
-			isa = PBXGroup;
-			children = (
-				942B2C6A1851D7440090F7C9 /* AFQiniuClientTests.m */,
-				942B2C651851D7440090F7C9 /* Supporting Files */,
-			);
-			path = AFQiniuClientTests;
-			sourceTree = "<group>";
-		};
-		942B2C651851D7440090F7C9 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				942B2C661851D7440090F7C9 /* AFQiniuClientTests-Info.plist */,
-				942B2C671851D7440090F7C9 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		94F5BE73185F07850053E2A0 /* GTMBase64 */ = {
-			isa = PBXGroup;
-			children = (
-				94F5BE74185F07850053E2A0 /* GTMBase64.h */,
-				94F5BE75185F07850053E2A0 /* GTMBase64.m */,
-				94F5BE76185F07850053E2A0 /* GTMDefines.h */,
-			);
-			path = GTMBase64;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		942B2C131851D7270090F7C9 /* AFQiniu */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 942B2C461851D7270090F7C9 /* Build configuration list for PBXNativeTarget "AFQiniu" */;
-			buildPhases = (
-				2BD77E8C5DC945DDA799BDC6 /* Check Pods Manifest.lock */,
-				942B2C101851D7270090F7C9 /* Sources */,
-				942B2C111851D7270090F7C9 /* Frameworks */,
-				942B2C121851D7270090F7C9 /* Resources */,
-				4A651830BE5E48EE90406D73 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				94F5BE7B185F0E810053E2A0 /* PBXTargetDependency */,
-			);
-			name = AFQiniu;
-			productName = AFQiniu;
-			productReference = 942B2C141851D7270090F7C9 /* AFQiniu.app */;
-			productType = "com.apple.product-type.application";
-		};
-		942B2C341851D7270090F7C9 /* AFQiniuTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 942B2C491851D7270090F7C9 /* Build configuration list for PBXNativeTarget "AFQiniuTests" */;
-			buildPhases = (
-				942B2C311851D7270090F7C9 /* Sources */,
-				942B2C321851D7270090F7C9 /* Frameworks */,
-				942B2C331851D7270090F7C9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				942B2C3B1851D7270090F7C9 /* PBXTargetDependency */,
-			);
-			name = AFQiniuTests;
-			productName = AFQiniuTests;
-			productReference = 942B2C351851D7270090F7C9 /* AFQiniuTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		942B2C4F1851D7440090F7C9 /* AFQiniuClient */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 942B2C6C1851D7440090F7C9 /* Build configuration list for PBXNativeTarget "AFQiniuClient" */;
-			buildPhases = (
-				BC896893A62B48899B928765 /* Check Pods Manifest.lock */,
-				942B2C4C1851D7440090F7C9 /* Sources */,
-				942B2C4D1851D7440090F7C9 /* Frameworks */,
-				942B2C4E1851D7440090F7C9 /* CopyFiles */,
-				6F7008661C01407E89A1E70A /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AFQiniuClient;
-			productName = AFQiniuClient;
-			productReference = 942B2C501851D7440090F7C9 /* libAFQiniuClient.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		942B2C5C1851D7440090F7C9 /* AFQiniuClientTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 942B2C6F1851D7440090F7C9 /* Build configuration list for PBXNativeTarget "AFQiniuClientTests" */;
-			buildPhases = (
-				942B2C591851D7440090F7C9 /* Sources */,
-				942B2C5A1851D7440090F7C9 /* Frameworks */,
-				942B2C5B1851D7440090F7C9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				942B2C621851D7440090F7C9 /* PBXTargetDependency */,
-			);
-			name = AFQiniuClientTests;
-			productName = AFQiniuClientTests;
-			productReference = 942B2C5D1851D7440090F7C9 /* AFQiniuClientTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		942B2C0C1851D7270090F7C9 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = R;
-				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = "Ryan Wang";
-				TargetAttributes = {
-					942B2C341851D7270090F7C9 = {
-						TestTargetID = 942B2C131851D7270090F7C9;
-					};
-					942B2C5C1851D7440090F7C9 = {
-						TestTargetID = 942B2C131851D7270090F7C9;
-					};
-				};
-			};
-			buildConfigurationList = 942B2C0F1851D7270090F7C9 /* Build configuration list for PBXProject "AFQiniu" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 942B2C0B1851D7270090F7C9;
-			productRefGroup = 942B2C151851D7270090F7C9 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				942B2C131851D7270090F7C9 /* AFQiniu */,
-				942B2C341851D7270090F7C9 /* AFQiniuTests */,
-				942B2C4F1851D7440090F7C9 /* AFQiniuClient */,
-				942B2C5C1851D7440090F7C9 /* AFQiniuClientTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		942B2C121851D7270090F7C9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				942B2C301851D7270090F7C9 /* Images.xcassets in Resources */,
-				94544FB0185FF4020007C1A5 /* 1.jpg in Resources */,
-				942B2C221851D7270090F7C9 /* InfoPlist.strings in Resources */,
-				942B2C2B1851D7270090F7C9 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		942B2C331851D7270090F7C9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				942B2C411851D7270090F7C9 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		942B2C5B1851D7440090F7C9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				942B2C691851D7440090F7C9 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2BD77E8C5DC945DDA799BDC6 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		4A651830BE5E48EE90406D73 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-AFQiniu-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6F7008661C01407E89A1E70A /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-AFQiniuClient-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BC896893A62B48899B928765 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		942B2C101851D7270090F7C9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				942B2C2E1851D7270090F7C9 /* RViewController.m in Sources */,
-				942B2C241851D7270090F7C9 /* main.m in Sources */,
-				942B2C281851D7270090F7C9 /* RAppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		942B2C311851D7270090F7C9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				942B2C431851D7270090F7C9 /* AFQiniuTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		942B2C4C1851D7440090F7C9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				94F5BE72185EFF830053E2A0 /* QiniuPutExtra.m in Sources */,
-				94F5BE6F185EFF0B0053E2A0 /* QiniuPutPolicy.m in Sources */,
-				942B2C581851D7440090F7C9 /* AFQiniuClient.m in Sources */,
-				94F5BE77185F07850053E2A0 /* GTMBase64.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		942B2C591851D7440090F7C9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				942B2C6B1851D7440090F7C9 /* AFQiniuClientTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		942B2C3B1851D7270090F7C9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 942B2C131851D7270090F7C9 /* AFQiniu */;
-			targetProxy = 942B2C3A1851D7270090F7C9 /* PBXContainerItemProxy */;
-		};
-		942B2C621851D7440090F7C9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 942B2C4F1851D7440090F7C9 /* AFQiniuClient */;
-			targetProxy = 942B2C611851D7440090F7C9 /* PBXContainerItemProxy */;
-		};
-		94F5BE7B185F0E810053E2A0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 942B2C4F1851D7440090F7C9 /* AFQiniuClient */;
-			targetProxy = 94F5BE7A185F0E810053E2A0 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		942B2C201851D7270090F7C9 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				942B2C211851D7270090F7C9 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		942B2C291851D7270090F7C9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				942B2C2A1851D7270090F7C9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		942B2C3F1851D7270090F7C9 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				942B2C401851D7270090F7C9 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		942B2C671851D7440090F7C9 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				942B2C681851D7440090F7C9 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		942B2C441851D7270090F7C9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		942B2C451851D7270090F7C9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		942B2C471851D7270090F7C9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE5E484C9EAA4C4ABC71BC35 /* Pods-AFQiniu.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AFQiniu/AFQiniu-Prefix.pch";
-				INFOPLIST_FILE = "AFQiniu/AFQiniu-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		942B2C481851D7270090F7C9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE5E484C9EAA4C4ABC71BC35 /* Pods-AFQiniu.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AFQiniu/AFQiniu-Prefix.pch";
-				INFOPLIST_FILE = "AFQiniu/AFQiniu-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		942B2C4A1851D7270090F7C9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AFQiniu.app/AFQiniu";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AFQiniu/AFQiniu-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "AFQiniuTests/AFQiniuTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		942B2C4B1851D7270090F7C9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AFQiniu.app/AFQiniu";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AFQiniu/AFQiniu-Prefix.pch";
-				INFOPLIST_FILE = "AFQiniuTests/AFQiniuTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-		942B2C6D1851D7440090F7C9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8500FFA457FB4D739F78BC45 /* Pods-AFQiniuClient.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				DSTROOT = /tmp/AFQiniuClient.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AFQiniuClient/AFQiniuClient-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		942B2C6E1851D7440090F7C9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8500FFA457FB4D739F78BC45 /* Pods-AFQiniuClient.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				DSTROOT = /tmp/AFQiniuClient.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AFQiniuClient/AFQiniuClient-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		942B2C701851D7440090F7C9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AFQiniu.app/AFQiniu";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AFQiniuClient/AFQiniuClient-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "AFQiniuClientTests/AFQiniuClientTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		942B2C711851D7440090F7C9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AFQiniu.app/AFQiniu";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AFQiniuClient/AFQiniuClient-Prefix.pch";
-				INFOPLIST_FILE = "AFQiniuClientTests/AFQiniuClientTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		942B2C0F1851D7270090F7C9 /* Build configuration list for PBXProject "AFQiniu" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				942B2C441851D7270090F7C9 /* Debug */,
-				942B2C451851D7270090F7C9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		942B2C461851D7270090F7C9 /* Build configuration list for PBXNativeTarget "AFQiniu" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				942B2C471851D7270090F7C9 /* Debug */,
-				942B2C481851D7270090F7C9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		942B2C491851D7270090F7C9 /* Build configuration list for PBXNativeTarget "AFQiniuTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				942B2C4A1851D7270090F7C9 /* Debug */,
-				942B2C4B1851D7270090F7C9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		942B2C6C1851D7440090F7C9 /* Build configuration list for PBXNativeTarget "AFQiniuClient" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				942B2C6D1851D7440090F7C9 /* Debug */,
-				942B2C6E1851D7440090F7C9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		942B2C6F1851D7440090F7C9 /* Build configuration list for PBXNativeTarget "AFQiniuClientTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				942B2C701851D7440090F7C9 /* Debug */,
-				942B2C711851D7440090F7C9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 942B2C0C1851D7270090F7C9 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>2BD77E8C5DC945DDA799BDC6</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>2EE18C0589534034AD1D70BF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EC46C27EB8C347D382A153EC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4A651830BE5E48EE90406D73</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-AFQiniu-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>6F7008661C01407E89A1E70A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-AFQiniuClient-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>8500FFA457FB4D739F78BC45</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-AFQiniuClient.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods-AFQiniuClient.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C0B1851D7270090F7C9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>942B2C1D1851D7270090F7C9</string>
+				<string>942B2C3C1851D7270090F7C9</string>
+				<string>942B2C521851D7440090F7C9</string>
+				<string>942B2C641851D7440090F7C9</string>
+				<string>942B2C161851D7270090F7C9</string>
+				<string>942B2C151851D7270090F7C9</string>
+				<string>AE5E484C9EAA4C4ABC71BC35</string>
+				<string>8500FFA457FB4D739F78BC45</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C0C1851D7270090F7C9</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>R</string>
+				<key>LastUpgradeCheck</key>
+				<string>0500</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Ryan Wang</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>942B2C341851D7270090F7C9</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>942B2C131851D7270090F7C9</string>
+					</dict>
+					<key>942B2C5C1851D7440090F7C9</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>942B2C131851D7270090F7C9</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>942B2C0F1851D7270090F7C9</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>942B2C0B1851D7270090F7C9</string>
+			<key>productRefGroup</key>
+			<string>942B2C151851D7270090F7C9</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>942B2C131851D7270090F7C9</string>
+				<string>942B2C341851D7270090F7C9</string>
+				<string>942B2C4F1851D7440090F7C9</string>
+				<string>942B2C5C1851D7440090F7C9</string>
+			</array>
+		</dict>
+		<key>942B2C0F1851D7270090F7C9</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>942B2C441851D7270090F7C9</string>
+				<string>942B2C451851D7270090F7C9</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>942B2C101851D7270090F7C9</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>942B2C2E1851D7270090F7C9</string>
+				<string>942B2C241851D7270090F7C9</string>
+				<string>942B2C281851D7270090F7C9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>942B2C111851D7270090F7C9</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>94394E551867309100252D85</string>
+				<string>942B2C1A1851D7270090F7C9</string>
+				<string>942B2C1C1851D7270090F7C9</string>
+				<string>942B2C181851D7270090F7C9</string>
+				<string>BE190E7330F04EFBBB511E4D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>942B2C121851D7270090F7C9</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>942B2C301851D7270090F7C9</string>
+				<string>94544FB0185FF4020007C1A5</string>
+				<string>942B2C221851D7270090F7C9</string>
+				<string>942B2C2B1851D7270090F7C9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>942B2C131851D7270090F7C9</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>942B2C461851D7270090F7C9</string>
+			<key>buildPhases</key>
+			<array>
+				<string>2BD77E8C5DC945DDA799BDC6</string>
+				<string>942B2C101851D7270090F7C9</string>
+				<string>942B2C111851D7270090F7C9</string>
+				<string>942B2C121851D7270090F7C9</string>
+				<string>4A651830BE5E48EE90406D73</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>94F5BE7B185F0E810053E2A0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>AFQiniu</string>
+			<key>productName</key>
+			<string>AFQiniu</string>
+			<key>productReference</key>
+			<string>942B2C141851D7270090F7C9</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>942B2C141851D7270090F7C9</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>AFQiniu.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>942B2C151851D7270090F7C9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>942B2C141851D7270090F7C9</string>
+				<string>942B2C351851D7270090F7C9</string>
+				<string>942B2C501851D7440090F7C9</string>
+				<string>942B2C5D1851D7440090F7C9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C161851D7270090F7C9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>94394E541867309100252D85</string>
+				<string>942B2C171851D7270090F7C9</string>
+				<string>942B2C191851D7270090F7C9</string>
+				<string>942B2C1B1851D7270090F7C9</string>
+				<string>942B2C361851D7270090F7C9</string>
+				<string>A576AF57771B4D37A059DE3F</string>
+				<string>EC46C27EB8C347D382A153EC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C171851D7270090F7C9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>942B2C181851D7270090F7C9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>942B2C171851D7270090F7C9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>942B2C191851D7270090F7C9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>942B2C1A1851D7270090F7C9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>942B2C191851D7270090F7C9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>942B2C1B1851D7270090F7C9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>942B2C1C1851D7270090F7C9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>942B2C1B1851D7270090F7C9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>942B2C1D1851D7270090F7C9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>94544FAF185FF4020007C1A5</string>
+				<string>942B2C261851D7270090F7C9</string>
+				<string>942B2C271851D7270090F7C9</string>
+				<string>942B2C291851D7270090F7C9</string>
+				<string>942B2C2C1851D7270090F7C9</string>
+				<string>942B2C2D1851D7270090F7C9</string>
+				<string>94F5BE7D185F10530053E2A0</string>
+				<string>942B2C2F1851D7270090F7C9</string>
+				<string>942B2C1E1851D7270090F7C9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>AFQiniu</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C1E1851D7270090F7C9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>942B2C1F1851D7270090F7C9</string>
+				<string>942B2C201851D7270090F7C9</string>
+				<string>942B2C231851D7270090F7C9</string>
+				<string>942B2C251851D7270090F7C9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C1F1851D7270090F7C9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>AFQiniu-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C201851D7270090F7C9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>942B2C211851D7270090F7C9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C211851D7270090F7C9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C221851D7270090F7C9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>942B2C201851D7270090F7C9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>942B2C231851D7270090F7C9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C241851D7270090F7C9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>942B2C231851D7270090F7C9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>942B2C251851D7270090F7C9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AFQiniu-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C261851D7270090F7C9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>RAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C271851D7270090F7C9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>RAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C281851D7270090F7C9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>942B2C271851D7270090F7C9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>942B2C291851D7270090F7C9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>942B2C2A1851D7270090F7C9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C2A1851D7270090F7C9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C2B1851D7270090F7C9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>942B2C291851D7270090F7C9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>942B2C2C1851D7270090F7C9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>RViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C2D1851D7270090F7C9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>RViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C2E1851D7270090F7C9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>942B2C2D1851D7270090F7C9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>942B2C2F1851D7270090F7C9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C301851D7270090F7C9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>942B2C2F1851D7270090F7C9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>942B2C311851D7270090F7C9</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>942B2C431851D7270090F7C9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>942B2C321851D7270090F7C9</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>942B2C371851D7270090F7C9</string>
+				<string>942B2C391851D7270090F7C9</string>
+				<string>942B2C381851D7270090F7C9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>942B2C331851D7270090F7C9</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>942B2C411851D7270090F7C9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>942B2C341851D7270090F7C9</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>942B2C491851D7270090F7C9</string>
+			<key>buildPhases</key>
+			<array>
+				<string>942B2C311851D7270090F7C9</string>
+				<string>942B2C321851D7270090F7C9</string>
+				<string>942B2C331851D7270090F7C9</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>942B2C3B1851D7270090F7C9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>AFQiniuTests</string>
+			<key>productName</key>
+			<string>AFQiniuTests</string>
+			<key>productReference</key>
+			<string>942B2C351851D7270090F7C9</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>942B2C351851D7270090F7C9</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>AFQiniuTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>942B2C361851D7270090F7C9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>942B2C371851D7270090F7C9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>942B2C361851D7270090F7C9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>942B2C381851D7270090F7C9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>942B2C171851D7270090F7C9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>942B2C391851D7270090F7C9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>942B2C1B1851D7270090F7C9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>942B2C3A1851D7270090F7C9</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>942B2C0C1851D7270090F7C9</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>942B2C131851D7270090F7C9</string>
+			<key>remoteInfo</key>
+			<string>AFQiniu</string>
+		</dict>
+		<key>942B2C3B1851D7270090F7C9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>942B2C131851D7270090F7C9</string>
+			<key>targetProxy</key>
+			<string>942B2C3A1851D7270090F7C9</string>
+		</dict>
+		<key>942B2C3C1851D7270090F7C9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>942B2C421851D7270090F7C9</string>
+				<string>942B2C3D1851D7270090F7C9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>AFQiniuTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C3D1851D7270090F7C9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>942B2C3E1851D7270090F7C9</string>
+				<string>942B2C3F1851D7270090F7C9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C3E1851D7270090F7C9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>AFQiniuTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C3F1851D7270090F7C9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>942B2C401851D7270090F7C9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C401851D7270090F7C9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C411851D7270090F7C9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>942B2C3F1851D7270090F7C9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>942B2C421851D7270090F7C9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AFQiniuTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C431851D7270090F7C9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>942B2C421851D7270090F7C9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>942B2C441851D7270090F7C9</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>942B2C451851D7270090F7C9</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>942B2C461851D7270090F7C9</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>942B2C471851D7270090F7C9</string>
+				<string>942B2C481851D7270090F7C9</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>942B2C471851D7270090F7C9</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>AE5E484C9EAA4C4ABC71BC35</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>AFQiniu/AFQiniu-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>AFQiniu/AFQiniu-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>942B2C481851D7270090F7C9</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>AE5E484C9EAA4C4ABC71BC35</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>AFQiniu/AFQiniu-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>AFQiniu/AFQiniu-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>942B2C491851D7270090F7C9</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>942B2C4A1851D7270090F7C9</string>
+				<string>942B2C4B1851D7270090F7C9</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>942B2C4A1851D7270090F7C9</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/AFQiniu.app/AFQiniu</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>AFQiniu/AFQiniu-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>AFQiniuTests/AFQiniuTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>942B2C4B1851D7270090F7C9</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/AFQiniu.app/AFQiniu</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>AFQiniu/AFQiniu-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>AFQiniuTests/AFQiniuTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>942B2C4C1851D7440090F7C9</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>94F5BE72185EFF830053E2A0</string>
+				<string>94F5BE6F185EFF0B0053E2A0</string>
+				<string>942B2C581851D7440090F7C9</string>
+				<string>94F5BE77185F07850053E2A0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>942B2C4D1851D7440090F7C9</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>942B2C511851D7440090F7C9</string>
+				<string>2EE18C0589534034AD1D70BF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>942B2C4E1851D7440090F7C9</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>dstPath</key>
+			<string>include/$(PRODUCT_NAME)</string>
+			<key>dstSubfolderSpec</key>
+			<string>16</string>
+			<key>files</key>
+			<array>
+				<string>942B2C561851D7440090F7C9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXCopyFilesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>942B2C4F1851D7440090F7C9</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>942B2C6C1851D7440090F7C9</string>
+			<key>buildPhases</key>
+			<array>
+				<string>BC896893A62B48899B928765</string>
+				<string>942B2C4C1851D7440090F7C9</string>
+				<string>942B2C4D1851D7440090F7C9</string>
+				<string>942B2C4E1851D7440090F7C9</string>
+				<string>6F7008661C01407E89A1E70A</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>AFQiniuClient</string>
+			<key>productName</key>
+			<string>AFQiniuClient</string>
+			<key>productReference</key>
+			<string>942B2C501851D7440090F7C9</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>942B2C501851D7440090F7C9</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libAFQiniuClient.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>942B2C511851D7440090F7C9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>942B2C171851D7270090F7C9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>942B2C521851D7440090F7C9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>94F5BE73185F07850053E2A0</string>
+				<string>94F5BE6D185EFF0B0053E2A0</string>
+				<string>94F5BE6E185EFF0B0053E2A0</string>
+				<string>942B2C551851D7440090F7C9</string>
+				<string>942B2C571851D7440090F7C9</string>
+				<string>94F5BE70185EFF7B0053E2A0</string>
+				<string>94F5BE71185EFF830053E2A0</string>
+				<string>942B2C531851D7440090F7C9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>AFQiniuClient</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C531851D7440090F7C9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>942B2C541851D7440090F7C9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C541851D7440090F7C9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AFQiniuClient-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C551851D7440090F7C9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AFQiniuClient.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C561851D7440090F7C9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>942B2C551851D7440090F7C9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>942B2C571851D7440090F7C9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AFQiniuClient.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C581851D7440090F7C9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>942B2C571851D7440090F7C9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>942B2C591851D7440090F7C9</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>942B2C6B1851D7440090F7C9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>942B2C5A1851D7440090F7C9</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>942B2C631851D7440090F7C9</string>
+				<string>942B2C5E1851D7440090F7C9</string>
+				<string>942B2C601851D7440090F7C9</string>
+				<string>942B2C5F1851D7440090F7C9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>942B2C5B1851D7440090F7C9</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>942B2C691851D7440090F7C9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>942B2C5C1851D7440090F7C9</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>942B2C6F1851D7440090F7C9</string>
+			<key>buildPhases</key>
+			<array>
+				<string>942B2C591851D7440090F7C9</string>
+				<string>942B2C5A1851D7440090F7C9</string>
+				<string>942B2C5B1851D7440090F7C9</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>942B2C621851D7440090F7C9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>AFQiniuClientTests</string>
+			<key>productName</key>
+			<string>AFQiniuClientTests</string>
+			<key>productReference</key>
+			<string>942B2C5D1851D7440090F7C9</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>942B2C5D1851D7440090F7C9</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>AFQiniuClientTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>942B2C5E1851D7440090F7C9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>942B2C361851D7270090F7C9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>942B2C5F1851D7440090F7C9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>942B2C171851D7270090F7C9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>942B2C601851D7440090F7C9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>942B2C1B1851D7270090F7C9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>942B2C611851D7440090F7C9</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>942B2C0C1851D7270090F7C9</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>942B2C4F1851D7440090F7C9</string>
+			<key>remoteInfo</key>
+			<string>AFQiniuClient</string>
+		</dict>
+		<key>942B2C621851D7440090F7C9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>942B2C4F1851D7440090F7C9</string>
+			<key>targetProxy</key>
+			<string>942B2C611851D7440090F7C9</string>
+		</dict>
+		<key>942B2C631851D7440090F7C9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>942B2C501851D7440090F7C9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>942B2C641851D7440090F7C9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>942B2C6A1851D7440090F7C9</string>
+				<string>942B2C651851D7440090F7C9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>AFQiniuClientTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C651851D7440090F7C9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>942B2C661851D7440090F7C9</string>
+				<string>942B2C671851D7440090F7C9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C661851D7440090F7C9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>AFQiniuClientTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C671851D7440090F7C9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>942B2C681851D7440090F7C9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C681851D7440090F7C9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C691851D7440090F7C9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>942B2C671851D7440090F7C9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>942B2C6A1851D7440090F7C9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AFQiniuClientTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>942B2C6B1851D7440090F7C9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>942B2C6A1851D7440090F7C9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>942B2C6C1851D7440090F7C9</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>942B2C6D1851D7440090F7C9</string>
+				<string>942B2C6E1851D7440090F7C9</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>942B2C6D1851D7440090F7C9</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>8500FFA457FB4D739F78BC45</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>DSTROOT</key>
+				<string>/tmp/AFQiniuClient.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>AFQiniuClient/AFQiniuClient-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string>-ObjC</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>942B2C6E1851D7440090F7C9</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>8500FFA457FB4D739F78BC45</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>DSTROOT</key>
+				<string>/tmp/AFQiniuClient.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>AFQiniuClient/AFQiniuClient-Prefix.pch</string>
+				<key>OTHER_LDFLAGS</key>
+				<string>-ObjC</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>942B2C6F1851D7440090F7C9</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>942B2C701851D7440090F7C9</string>
+				<string>942B2C711851D7440090F7C9</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>942B2C701851D7440090F7C9</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/AFQiniu.app/AFQiniu</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>AFQiniuClient/AFQiniuClient-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>AFQiniuClientTests/AFQiniuClientTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>942B2C711851D7440090F7C9</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/AFQiniu.app/AFQiniu</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>AFQiniuClient/AFQiniuClient-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>AFQiniuClientTests/AFQiniuClientTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>94394E541867309100252D85</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>compiled.mach-o.dylib</string>
+			<key>name</key>
+			<string>libz.dylib</string>
+			<key>path</key>
+			<string>usr/lib/libz.dylib</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>94394E551867309100252D85</key>
+		<dict>
+			<key>fileRef</key>
+			<string>94394E541867309100252D85</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>94544FAF185FF4020007C1A5</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>1.jpg</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>94544FB0185FF4020007C1A5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>94544FAF185FF4020007C1A5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>94F5BE6D185EFF0B0053E2A0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>QiniuPutPolicy.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>94F5BE6E185EFF0B0053E2A0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>QiniuPutPolicy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>94F5BE6F185EFF0B0053E2A0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>94F5BE6E185EFF0B0053E2A0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>94F5BE70185EFF7B0053E2A0</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>QiniuPutExtra.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>94F5BE71185EFF830053E2A0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>QiniuPutExtra.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>94F5BE72185EFF830053E2A0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>94F5BE71185EFF830053E2A0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>94F5BE73185F07850053E2A0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>94F5BE74185F07850053E2A0</string>
+				<string>94F5BE75185F07850053E2A0</string>
+				<string>94F5BE76185F07850053E2A0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>GTMBase64</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>94F5BE74185F07850053E2A0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>GTMBase64.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>94F5BE75185F07850053E2A0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>GTMBase64.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>94F5BE76185F07850053E2A0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>GTMDefines.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>94F5BE77185F07850053E2A0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>94F5BE75185F07850053E2A0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>94F5BE7A185F0E810053E2A0</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>942B2C0C1851D7270090F7C9</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>942B2C4F1851D7440090F7C9</string>
+			<key>remoteInfo</key>
+			<string>AFQiniuClient</string>
+		</dict>
+		<key>94F5BE7B185F0E810053E2A0</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>942B2C4F1851D7440090F7C9</string>
+			<key>targetProxy</key>
+			<string>94F5BE7A185F0E810053E2A0</string>
+		</dict>
+		<key>94F5BE7D185F10530053E2A0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>QiniuConfig.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A576AF57771B4D37A059DE3F</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-AFQiniu.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>AE5E484C9EAA4C4ABC71BC35</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-AFQiniu.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods-AFQiniu.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BC896893A62B48899B928765</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>BE190E7330F04EFBBB511E4D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A576AF57771B4D37A059DE3F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>EC46C27EB8C347D382A153EC</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-AFQiniuClient.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>942B2C0C1851D7270090F7C9</string>
+</dict>
+</plist>
