@@ -9,10 +9,6 @@
 #import "AFQiniuClient.h"
 #import "QiniuPutPolicy.h"
 
-#ifdef HAVE_MAGIC_KIT
-#import <MagicKit/MagicKit.h>
-#endif
-
 #if TARGET_OS_IPHONE
     #import <MobileCoreServices/MobileCoreServices.h>
 #else
@@ -24,6 +20,10 @@
 
 #ifndef HAVE_MAGIC_KIT
 #define HAVE_MAGIC_KIT
+#endif
+
+#ifdef HAVE_MAGIC_KIT
+#import <MagicKit/MagicKit.h>
 #endif
 
 @interface AFQiniuClient ()

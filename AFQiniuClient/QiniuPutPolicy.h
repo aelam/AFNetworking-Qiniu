@@ -25,7 +25,5 @@
 // Make uptoken string.
 - (NSString *)makeToken:(NSString *)accessKey secretKey:(NSString *)secretKey;
 
-+ (NSString *)makeDownloadURL:(NSString *)url token:(NSString *)accessKey secretKey:(NSString *)secretKey;
-
 
 @end
