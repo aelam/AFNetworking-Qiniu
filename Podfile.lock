@@ -8,12 +8,10 @@ PODS:
   - MagicKit (0.0.1)
 
 DEPENDENCIES:
-  - AFQiniuClient (from `AFQiniuClient.podspec`)
+  - AFQiniuClient (~> 0.0.1)
   - JSONKit (from `https://raw.github.com/jstart/Specs/8e68f73dae8a378bc16e9b3891b7df6f5f4357d9/JSONKit/1.6/JSONKit.podspec`)
 
 EXTERNAL SOURCES:
-  AFQiniuClient:
-    :podspec: AFQiniuClient.podspec
   JSONKit:
     :podspec: https://raw.github.com/jstart/Specs/8e68f73dae8a378bc16e9b3891b7df6f5f4357d9/JSONKit/1.6/JSONKit.podspec
 
@@ -23,4 +21,4 @@ SPEC CHECKSUMS:
   JSONKit: fcffce5ba89a9e9a7fe38b7f94ce974cd698bedf
   MagicKit: 6f61d6d3dd55f5f5200ff353457756079b0da8cc
 
-COCOAPODS: 0.28.0
+COCOAPODS: 0.29.0
